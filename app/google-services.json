@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "787904831174",
+    "project_id": "grameen-light-0",
+    "storage_bucket": "grameen-light-0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787904831174:android:4e8a522ab4029e3a2241c7",
+        "android_client_info": {
+          "package_name": "com.grameenlight.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmigZvSXjCO-3BnPa7SilRIgIH0WXBmKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

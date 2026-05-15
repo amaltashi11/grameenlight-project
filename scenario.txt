@@ -1,0 +1,25 @@
+Android App Development using GenAI- Grameen-Light (Energy) 
+1. The Problem Statement: 
+Streetlights in villages often remain "ON" during the day due to manual error, wasting electricity, or 
+remain "OFF" for weeks when a bulb is fused because the Panchayat doesn't know about it. 
+2. Detailed Description (The Vision) 
+Grameen-Light is a "Citizen-led Streetlight Audit." It allows villagers to report the status of the "Lamp 
+Posts" in their street. It acts as a digital bridge between the resident and the Panchayat office. It helps in 
+"Zero-Dark" nights and ensures no energy is wasted during the day. 
+3. App Usage & User Flow 
+● Pole Map: See all poles in the village (Simulated). 
+● Quick Report: Tap a pole -> select status (Working/Fused/Burning in Day). 
+● Repair Tracker: See if the complaint has been "Assigned" or "Fixed." 
+4. Technical Implementation & Hints 
+● Energy Goal: A visual showing "Energy Saved this month" through daytime reporting. 
+● Real-time: Use Firebase to sync the status across the village. 
+● UI: Use a "Dark/Light" theme switch to represent night/day audits. 
+● Database: Room DB for persistent local records. 
+5. Impact Goals 
+● Smart Villages: Applying IoT concepts manually through community participation. 
+● Energy Efficiency: Reducing waste at the government level. 
+● Public Safety: Ensuring women and children can walk safely at night. 
+6. Success Criteria for Students 
+● The "Pole Status" must be visible as a color-coded dot on the map. 
+● The app must generate a "Complaint ID" for every report. 
+● The UI must be extremely simple (one-tap reporting).

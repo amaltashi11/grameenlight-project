@@ -1,0 +1,96 @@
+﻿--------- beginning of main
+05-07 17:14:13.940 30692 30692 E cmd     : BBinder_init Processname  cmd  
+05-07 17:14:13.940 30692 30692 E cmd     : BBinder_init hasGetProcessName  cmd
+05-07 17:14:13.976 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:13.976 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,238224,450000,449964,3,10000,78000,215,389,245781,10000,78000,14,51,156107
+05-07 17:14:14.799 16613 30704 I System.out: GlobalSearch: firstInt:  -2
+05-07 17:14:14.799 16613 30704 I System.out: GlobalSearch: name:  _14_1.del ; size = 3
+05-07 17:14:14.799 16613 30704 I System.out: GlobalSearch: memsize = 1
+05-07 17:14:14.801 16613 30704 I System.out: GlobalSearch: firstInt:  -2
+05-07 17:14:14.801 16613 30704 I System.out: GlobalSearch: name:  _12_1.del ; size = 18
+05-07 17:14:14.801 16613 30704 I System.out: GlobalSearch: memsize = 3
+05-07 17:14:14.802 16613 30704 I System.out: GlobalSearch: firstInt:  -2
+05-07 17:14:14.802 16613 30704 I System.out: GlobalSearch: name:  _10_1.del ; size = 3
+05-07 17:14:14.802 16613 30704 I System.out: GlobalSearch: memsize = 1
+05-07 17:14:14.802 16613 30704 I System.out: GlobalSearch: firstInt:  -2
+05-07 17:14:14.802 16613 30704 I System.out: GlobalSearch: name:  _z_1.del ; size = 12
+05-07 17:14:14.802 16613 30704 I System.out: GlobalSearch: memsize = 2
+05-07 17:14:14.803 16613 30704 I System.out: GlobalSearch: firstInt:  -2
+05-07 17:14:14.803 16613 30704 I System.out: GlobalSearch: name:  _y_1.del ; size = 3
+05-07 17:14:14.803 16613 30704 I System.out: GlobalSearch: memsize = 1
+05-07 17:14:14.806 16613 30704 I System.out: GlobalSearch: firstInt:  -2
+05-07 17:14:14.806 16613 30704 I System.out: GlobalSearch: name:  _u_5.del ; size = 252
+05-07 17:14:14.806 16613 30704 I System.out: GlobalSearch: memsize = 32
+05-07 17:14:14.993 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:14.993 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,238224,450000,449964,3,10000,78000,215,389,245781,10000,78000,14,51,156107
+05-07 17:14:16.012 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:16.012 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,238224,450000,449964,3,10000,78000,215,389,245781,10000,78000,14,51,156107
+05-07 17:14:17.029 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:17.029 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,239801,450000,449969,3,10000,78000,215,389,245784,10000,78000,14,51,156108
+05-07 17:14:18.042 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:18.043 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 270000,247204,450000,449992,3,10000,78000,215,389,245801,10000,78000,14,51,156118
+05-07 17:14:19.062 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:19.062 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 270000,247204,450000,449992,3,10000,78000,215,389,245801,10000,78000,14,51,156118
+05-07 17:14:19.874  8029 29273 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+05-07 17:14:19.874  8029 29273 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-07 17:14:20.086 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:20.087 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,245816,450000,449994,3,10000,78000,215,389,245804,10000,78000,14,51,156120
+05-07 17:14:20.095 27270 27303 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=c0f86893-4eed-4fe9-ba6c-1c0e312b3930, tags={ com.whatsapp.xmpp.messaging.XmppLifecycleWorker } ]
+05-07 17:14:20.296 11812 17853 D SQLiteQueryBuilder: SELECT _id, date_modified, title, album, album_id, artist, artist_id FROM audio WHERE ((((is_pending=0 AND NOT _modifier=4) OR (is_pending=1 AND lower(_data) NOT REGEXP '.*/\.pending-(\d+)-([^/]+)$' AND owner_package_name IN ( 'com.google.android.gms' , 'com.google.android.gsf' )))) AND (is_trashed=0) AND (volume_name IN ( 'external_primary' ))) AND ((_id>? AND (is_music=1 OR is_podcast=1) AND title IS NOT NULL)) ORDER BY _id DESC
+05-07 17:14:21.102 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:21.102 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,245816,450000,449994,3,10000,78000,215,389,245804,10000,78000,14,51,156120
+05-07 17:14:21.105 20294 11336 I eija    : (REDACTED) HDM. appOpsListener %s %s
+05-07 17:14:21.106 20294 11336 I eija    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+05-07 17:14:21.334 21916 21920 W ocessService0:2: Reducing the number of considered missed Gc histogram windows from 115 to 100
+05-07 17:14:22.121 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:22.121 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,245816,450000,449994,3,10000,78000,215,389,245804,10000,78000,14,51,156120
+05-07 17:14:23.138 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:23.139 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,245816,450000,449994,3,10000,78000,215,389,245804,10000,78000,14,51,156120
+05-07 17:14:23.500 22213 22213 I DefaultProcessValidator: Validating WorkManager process
+05-07 17:14:23.503 22213 22278 I DefaultProcessValidator: Processes: NONE, true, com.google.android.apps.messaging, com.google.android.apps.messaging
+05-07 17:14:23.603 22213 22213 I BugleRestore: Returning restoreAnytimeCompatibleRestoreWorkflowSteps [CONTEXT ratelimit_period="10 SECONDS" ]
+05-07 17:14:23.624 22213 22213 I SyncManagerImpl: #sync(). Running Synclets and scheduling next sync.
+05-07 17:14:23.647 22213 23630 I SyncManagerImpl: Running synclets: [TemplateFetcherSynclet]
+05-07 17:14:23.649 22213 22303 I SyncManagerImpl: Starting synclet: TemplateFetcherSynclet
+05-07 17:14:23.656 22213 22278 I BugleSpam: cache miss! load and set cached templates at version 20260506222230IN, norm 
+05-07 17:14:23.656 22213 22303 I BugleSpam: TemplateFetcherSynclet: skipping, latest version already available
+05-07 17:14:23.658 22213 22276 I SyncManagerImpl: #sync() complete
+05-07 17:14:23.658 22213 22276 I SyncManagerImpl: Completed sync. Scheduling next wakeup
+05-07 17:14:23.659 22213 22276 I SyncWorkManagerPeriodic: Scheduling next periodic WorkManager workers
+05-07 17:14:23.908 22213 29403 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=70f1d9de-0dd7-4da6-bef9-0ccdb2228b46, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,com.google.apps.tiktok.sync.impl.workmanager.SyncPeriodicWorker,sync_constraint:none,TikTokWorker#com.google.apps.tiktok.sync.impl.workmanager.SyncPeriodicWorker } ]
+05-07 17:14:23.909 22213 22303 I SyncWorkManagerPeriodic: Successfully scheduled next periodic workers
+05-07 17:14:24.153 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:24.153 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,245816,450000,449994,3,10000,78000,215,389,245804,10000,78000,14,51,156120
+05-07 17:14:25.170 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:25.170 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,245816,450000,449994,3,10000,78000,215,389,245804,10000,78000,14,51,156120
+05-07 17:14:26.184 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:26.185 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,245816,450000,449994,3,10000,78000,215,389,245804,10000,78000,14,51,156120
+05-07 17:14:27.204 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:27.205 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,245816,450000,449994,3,10000,78000,215,389,245804,10000,78000,14,51,156120
+05-07 17:14:28.224 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:28.224 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,244264,450000,449996,3,10000,78000,215,389,245810,10000,78000,14,51,156123
+05-07 17:14:29.242 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:29.242 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:29.875  8029 29273 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+05-07 17:14:29.876  8029 29273 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-07 17:14:30.257 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:30.258 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:31.274 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:31.275 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:32.294 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:32.294 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:33.316 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:33.316 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:34.334 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:34.334 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:35.350 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:35.350 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:36.358 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:36.358 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:36.368  1861  1865 W .android.as.oss: Reducing the number of considered missed Gc histogram windows from 122 to 100
+05-07 17:14:37.381 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:37.382 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:38.400 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:38.400 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123
+05-07 17:14:39.418 12526 12526 I wpa_supplicant: doCommand rule = GET_RATE_STATS  ifaceName = wlan0
+05-07 17:14:39.418 12526 12526 I wpa_supplicant: doStringCommandInternal ret = 0 reply = 243000,243847,450000,449996,3,10000,78000,215,389,245813,10000,78000,14,51,156123

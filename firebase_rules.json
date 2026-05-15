@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "panchayats": {
+      ".read": true,
+      ".write": false
+    },
+    "villages": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}

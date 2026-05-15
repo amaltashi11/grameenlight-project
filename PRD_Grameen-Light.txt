@@ -1,0 +1,164 @@
+Executive Summary
+Grameen-Light is a village streetlight audit and complaint management application designed to help residents report lighting issues quickly and help the Panchayat monitor, assign, and close repairs. The product supports citizen-led reporting, complaint tracking, and a simple village pole map that makes the condition of each pole visible at a glance.
+
+The application is intentionally lightweight and portrait-first. It is built around a single post-login dashboard that combines a pole map, a repair tracker, an energy-savings indicator, and role-specific actions for citizens and Panchayat users. The overall experience is designed to be simple enough for one-tap reporting while still supporting administrative follow-up and real-time synchronization when connectivity is available.
+
+Problem Statement
+Streetlights in villages are often left on during the day because of manual error, or left off for long periods when bulbs fail and the Panchayat is not informed in time. This creates unnecessary electricity usage, weakens public safety after dark, and slows down local maintenance response.
+
+Residents need a simple way to report the status of poles in their area. The Panchayat needs a visible repair tracker, a complaint identifier for each issue, and a shared record of the current status of every reported pole. The solution must be easy to understand, require minimal interaction, and support both local persistence and village-wide synchronization.
+
+Goals & Objectives
+1. Enable villagers to report streetlight issues with minimal steps.
+2. Provide a visual pole map with clear color-coded pole status indicators.
+3. Generate a unique complaint ID for every non-working report.
+4. Allow the Panchayat to review reports, mark complaints as assigned or fixed, and update pole status.
+5. Preserve all reports locally for offline continuity and synchronize updates when Firebase is available.
+6. Show a simple energy-savings indicator based on daytime burning reports.
+7. Support a clear separation between citizen usage and Panchayat administration.
+8. Keep the user interface simple, portrait-oriented, and optimized for quick decisions.
+
+User Personas
+Citizen Resident
+A village resident who wants to report a pole that is fused or burning during the day. This user needs a fast, one-screen workflow and clear confirmation that the report has been created.
+
+Panchayat Operator
+A Panchayat staff member responsible for reviewing complaints, taking action on reports, and updating the complaint tracker from assigned to fixed. This user needs a clear complaint list, complaint details, and a simple login step.
+
+Functional Requirements
+1. The system shall present a launch/login screen with two entry paths: Continue as Citizen and Panchayat Login.
+2. The system shall allow a citizen to enter the application without entering credentials.
+3. The system shall require Panchayat users to authenticate with Panchayat ID and password before accessing the main dashboard.
+4. The system shall route all authenticated users to a single main dashboard screen.
+5. The system shall display the application title and a short village-illumination subtitle in the main dashboard header.
+6. The system shall provide a day/night theme switch that toggles the visual mode of the main dashboard.
+7. The system shall provide a logout action that clears the current session and returns the user to the login screen.
+8. The system shall display an energy-savings panel labeled Energy saved this month.
+9. The system shall derive the energy-savings indicator from the number of daytime burning reports recorded in the system.
+10. The system shall display a village pole map showing all seeded poles in their correct relative positions.
+11. The system shall render each pole as a color-coded dot on the map.
+12. The system shall use distinct colors for Working, Fused, and Burning in Day pole states.
+13. The system shall display a legend explaining the pole colors.
+14. The system shall allow a citizen to tap a pole on the map to open a reporting sheet.
+15. The system shall display the selected pole number and lane in the reporting sheet.
+16. The system shall allow the citizen to choose one of three report statuses: Working, Fused, or Burning in Day.
+17. The system shall generate a unique complaint ID for each submitted report.
+18. The system shall save each report locally in persistent storage.
+19. The system shall update the selected pole record with the latest status, tracker, complaint ID, and timestamp.
+20. The system shall create a complaint record containing the complaint ID, pole ID, status, tracker value, and creation time.
+21. The system shall display a repair tracker section for citizens that shows the most recent complaint records.
+22. The system shall display a Panchayat console for authenticated Panchayat users instead of the citizen repair tracker presentation.
+23. The system shall allow the Panchayat to scroll through the complaint list when the number of records exceeds the visible area.
+24. The system shall display each complaint with its complaint ID, pole number, tracker state, and status color.
+25. The system shall allow the Panchayat to tap a complaint to open a complaint details dialog.
+26. The system shall display the complaint details, including complaint ID, pole number, lane, issue label, and current tracker state.
+27. The system shall allow the Panchayat to mark a complaint as Assigned when the complaint is not already assigned.
+28. The system shall allow the Panchayat to mark a complaint as Fixed when the complaint is not already fixed.
+29. The system shall update the complaint tracker and pole status when the Panchayat marks a complaint as Assigned or Fixed.
+30. The system shall refresh the dashboard after any report submission or complaint update.
+31. The system shall synchronize pole and complaint data through Firebase Realtime Database when Firebase is configured.
+32. The system shall continue to function with local persistence if Firebase is unavailable or not configured.
+33. The system shall store session data so that authenticated users remain logged in until they explicitly log out.
+34. The system shall store the current user type so it can render citizen and Panchayat experiences correctly.
+35. The system shall seed a baseline village map with example poles when no local pole records exist.
+36. The system shall show a bottom status message indicating sync state, local save state, or Firebase connectivity state.
+37. The system shall operate in portrait orientation.
+38. The system shall keep the interface touch-first and avoid multi-step forms for report submission.
+39. The system shall use the same dashboard structure for both user roles, with role-based differences only in tracker and complaint actions.
+
+Non-Functional Requirements
+1. The application shall remain simple enough for one-tap reporting on low-end Android devices.
+2. The application shall load and render the dashboard without requiring complex navigation.
+3. The application shall preserve data locally so recent reports are not lost when connectivity is interrupted.
+4. The application shall provide responsive touch handling for map taps, sheet selection, and complaint list interaction.
+5. The application shall maintain a portrait-only layout for consistent field usability.
+6. The application shall present status information through clear colors and short labels.
+7. The application shall avoid requiring external services for core reporting behavior.
+8. The application shall support synchronization when Firebase is available without blocking the main user flow.
+9. The application shall keep the user interface visually clean and readable in both day and night themes.
+10. The application shall protect administrative access through authenticated login.
+
+User Stories
+Citizen Reporting
+As a citizen, I want to tap a pole on the map and immediately report whether it is working, fused, or burning during the day so that I can alert the Panchayat quickly.
+
+As a citizen, I want the app to generate a complaint ID automatically so that I can reference my report later.
+
+As a citizen, I want to see recent complaint progress in the repair tracker so that I know whether an issue has been assigned or fixed.
+
+Visual Awareness
+As a resident, I want pole status to be visible through color-coded map dots so that I can understand the situation at a glance.
+
+As a resident, I want to switch between day and night modes so that the screen remains easy to read in different lighting conditions.
+
+Panchayat Operations
+As a Panchayat operator, I want to log in with credentials so that only authorized users can manage complaints.
+
+As a Panchayat operator, I want to scroll through all complaint records so that I can review every unresolved issue.
+
+As a Panchayat operator, I want to open a complaint and mark it as Assigned or Fixed so that I can track maintenance progress.
+
+As a Panchayat operator, I want the pole status to update when I close a complaint so that the village map stays accurate.
+
+System Reliability
+As a user, I want reports to be stored locally first so that the app still works when the network is unavailable.
+
+As a user, I want updates to synchronize when connectivity returns so that the same village data is visible across devices.
+
+App Flow / Navigation Structure
+1. Launch Screen
+The app opens on a role-selection screen with two actions: Continue as Citizen and Panchayat Login.
+
+2. Citizen Path
+The citizen selects Continue as Citizen and enters the main dashboard directly.
+
+3. Panchayat Path
+The Panchayat user selects Panchayat Login, enters Panchayat ID and password, and then reaches the main dashboard after successful authentication.
+
+4. Main Dashboard
+The dashboard contains the title header, day/night switch, logout action, energy-savings card, village pole map, and the repair tracker or Panchayat console.
+
+5. Pole Reporting Sheet
+When a citizen taps a pole, a bottom sheet appears with the selected pole details and three one-tap status actions.
+
+6. Complaint Details Dialog
+When a Panchayat user taps a complaint in the console, a dialog appears with complaint details and action buttons for assignment or closure.
+
+7. Logout Flow
+Any authenticated user can log out and return to the role-selection screen.
+
+Data Requirements
+Local Data Store
+The application shall maintain a local Room database containing poles and reports.
+
+Pole Record
+Each pole record shall include: pole ID, x-coordinate, y-coordinate, lane name, current status, tracker state, complaint ID, and last updated timestamp.
+
+Report Record
+Each report record shall include: complaint ID, pole ID, status, tracker state, and creation timestamp.
+
+Session Data
+The application shall store: authentication state, Panchayat ID, Panchayat name, village ID, and user type.
+
+Firebase Data Model
+When synchronization is available, the application shall maintain village-scoped pole and complaint records in Firebase Realtime Database, along with Panchayat account data for authentication.
+
+Status Values
+The application shall support the following pole status values: Working, Fused, and Burning in Day.
+
+Tracker Values
+The application shall support the following tracker values: Healthy, Assigned, and Fixed.
+
+Out of Scope
+1. GPS-based pole detection.
+2. Live hardware IoT integration with physical streetlight controllers.
+3. Automated image recognition for identifying pole failures.
+4. Push notifications and SMS alerts.
+5. Multi-village comparative dashboards.
+6. Advanced analytics, charts, or admin reporting exports.
+7. Role management beyond Citizen and Panchayat.
+8. Multi-language support.
+9. Tablet-specific layouts.
+10. Public registration flows for new Panchayat accounts.
+
+End of Document
